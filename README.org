@@ -1,5 +1,8 @@
 * Clocker
-** Selenium (python) script for automatically doing Clock-In and Clock-Out
+** Selenium (python) script for automating Clock-In and Clock-Out
+** Disclaimer
+ - This script is meant for my personal use and will work only for my workplace's CRM
+ - You will have to modify it heavily for your usecase
 ** Installation
 *** Clone the Repo
 #+BEGIN_SRC shell
@@ -29,8 +32,16 @@ If the *env* is activated
 #+BEGIN_SRC shell
 python3 main.py
 #+END_SRC
-
+running via *run.sh*
 #+BEGIN_SRC shell
 chmod +x run.sh
 ./run.sh
 #+END_SRC
+** Configuration
+*** CONFIG_PATH
+CONFIG_PATH variable is defined in the main function (update it accordingly)
+*** Element Selectors
+All the Button/Link element ids/selector are defined in __init__ function (update it accordingly)
+*** Saving State
+By default State is saved in *~/.config/clocker/state* file
+Comment all *os.system* lines to disable that (works only on Linux like OS)
