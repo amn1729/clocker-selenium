@@ -1,0 +1,36 @@
+* Clocker
+** Selenium (python) script for automatically doing Clock-In and Clock-Out
+** Installation
+*** Clone the Repo
+#+BEGIN_SRC shell
+git clone https://github.com/amn1729/clocker-selenium.git --depth=1
+#+END_SRC
+*** Initialize virtual env
+#+BEGIN_SRC shell
+cd clocker-selenium
+#+END_SRC
+#+BEGIN_SRC shell
+python3 -m venv env
+#+END_SRC
+*** Activate virtual env
+#+BEGIN_SRC shell
+source env/bin/activate
+#+END_SRC
+for *fish* guys
+#+BEGIN_SRC shell
+source env/bin/activate.fish
+#+END_SRC
+*** Install Dependencies
+#+BEGIN_SRC shell
+pip install -r requirements.txt
+#+END_SRC
+*** Running the script
+If the *env* is activated
+#+BEGIN_SRC shell
+python3 main.py
+#+END_SRC
+
+#+BEGIN_SRC shell
+chmod +x run.sh
+./run.sh
+#+END_SRC
