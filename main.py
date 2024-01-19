@@ -1,5 +1,4 @@
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 # from selenium.webdriver.support.ui import WebDriverWait
 # from selenium.webdriver.support import expected_conditions as EC
@@ -108,6 +107,7 @@ class Clocker:
         Load dashboard and returns (has_clock_in_btn, has_clock_out_btn).
         @return (bool, bool)
         """
+        time.sleep(3)
         has_clock_in_btn, has_clock_out_btn = False, False
         print(colored("Loading Dashboard...", Color.YELLOW))
         self.driver.maximize_window()
